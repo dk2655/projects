@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/3019d3c305.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="jaani song.jpg" class="jaani">
+            <h1>Jaani Ve Jaani</h1>
+            <p>Afsana khan ft.Jaani</p>
+
+
+            <audio id="song">
+                <source src="Husn Anuv Jain 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fas fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fas fa-play" id="ctrlicon"></i></div>
+                <div><i class="fas fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="music.js"></script>
+</body>
+
+</html>
